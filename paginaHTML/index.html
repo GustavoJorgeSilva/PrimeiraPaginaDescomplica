@@ -93,30 +93,72 @@
     </figure>
 
     <section>
+
         <h2>Orçamento</h2>
         <form method="get" action="">
-            <label>Nome</label> <br>
-            <input type="text" name="nome" required> <br> <br>
 
-            <label>Email</label> <br>
-            <input type="email" name="email" required> <br> <br>
 
-            <label>Data de ida</label> <br> <br>
-            <input type="date" name="dataIda"> <br> <br>
 
-            <label>Data de volda</label> <br> <br>
-            <input type="date" name="dataVolta"> <br> <br>
+            <fieldset>
+                <legend>Dados do usúario</legend>
+                <label>Nome</label> <br>
+                <input type="text" name="nome" required> <br> <br>
 
-            <label>Quantidade de pessoas</label> <br> <br>
-            <input type="number" name="pessoas"> <br> <br>
+                <label>Email</label> <br>
+                <input type="email" name="email" required> <br> <br>
 
-            <label>Senha</label> <br> <br>
-            <input type="password" name="senha"> <br> <br>
+                <label>Data de ida</label> <br> <br>
+                <input type="date" name="dataIda"> <br> <br>
 
-            <label>Comentário</label> <br> <br>
-            <textarea rows="5" name="comentario"></textarea> <br> <br>
+                <label>Data de volda</label> <br> <br>
+                <input type="date" name="dataVolta"> <br> <br>
 
-            <button>Salvar</button>
+                <label>Quantidade de pessoas</label> <br> <br>
+                <input type="number" name="pessoas"> <br> <br>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Quais serviços deseja contratar?</legend>
+                <label>
+                    <br><input type="checkbox" name="passagens" value="Passagens"> Compra de passagens
+                </label>
+                <label>
+                    <br><input type="checkbox" name="hospedagem" value="Hospedagem"> Hospedagem
+                </label>
+                <label>
+                    <br><input type="checkbox" name="aluguelDeCarro" value="AluguelDeCarro"> Aluguel de Carro
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Escolha a forma de pagamento</legend>
+                <label>
+                    <br><input type="radio" name="formaPagamento" value="cartaoDeCredito"> Cartão de crédito
+                </label>
+                <label>
+                    <br><input type="radio" name="formaPagamento" value="boleto"> Boleto
+                </label>
+                <label>
+                    <br><input type="radio" name="formaPagamento" value="Pix"> Pix
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Escolha o prazo para pagamento</legend>
+                <select name="prazoPagamento">
+                    <option value="aVista" selected>Á vista</option>
+                    <option value="5x">5 vezes sem juros</option>
+                    <option value="10x">10 vezes com juros</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Comentário</legend> <br> <br>
+                <textarea rows="5" name="comentario"></textarea> <br> <br>
+                <button>Salvar</button>
+            </fieldset>
+
         </form>
     </section>
 
